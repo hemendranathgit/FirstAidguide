@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "959750037880",
+    "project_id": "firstaidguidem",
+    "storage_bucket": "firstaidguidem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959750037880:android:38bcca6db613fdb1f7e88d",
+        "android_client_info": {
+          "package_name": "com.hema.sample.sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959750037880-h3socukau3d8vu0863jqpo7utgfb9f89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFA4D3Dn-fW3uGukHdozNAh3cUCzEQPcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959750037880-h3socukau3d8vu0863jqpo7utgfb9f89.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "959750037880-5r8evp9162l0ehm5nraql69dar3146le.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hema.sample.sample"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

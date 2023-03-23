@@ -14,6 +14,7 @@ class SignUpPage extends StatelessWidget {
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
     return Scaffold(
+        resizeToAvoidBottomInset: false,
         backgroundColor: Colors.white,
         body: Column(
           children: [
@@ -32,7 +33,7 @@ class SignUpPage extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(height: 15,),
+                  SizedBox(height: 10,),
                   Text(
                     "Name",
                     style: TextStyle(
@@ -40,7 +41,48 @@ class SignUpPage extends StatelessWidget {
                       color: Colors.black,
                     ),
                   ),
-                  SizedBox(height: 15,),
+                  SizedBox(height: 10,),
+                  Container(
+                    decoration: BoxDecoration(
+                        color:Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                              blurRadius: 10,
+                              spreadRadius: 7,
+                              offset: Offset(1, 1),
+                              color:Colors.grey.withOpacity(0.2)
+                          )
+                        ]
+                    ),
+                    child: TextField(
+                      decoration: InputDecoration(
+                          hintText: "Type your name here",
+                          focusedBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                  color:Colors.white,
+                                  width: 1.0
+                              )
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                  color:Colors.white,
+                                  width: 1.0
+                              )
+                          ),
+                          border: OutlineInputBorder(
+                          )
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 10,),
+                  Text(
+                    "Age",
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.black,
+                    ),
+                  ),
+                  SizedBox(height: 10,),
                   Container(
                     decoration: BoxDecoration(
                         color:Colors.white,
@@ -73,7 +115,89 @@ class SignUpPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(height: 15,),
+                  SizedBox(height: 10,),
+                  Text(
+                    "Gender",
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.black,
+                    ),
+                  ),
+                  SizedBox(height: 10,),
+                  Container(
+                    decoration: BoxDecoration(
+                        color:Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                              blurRadius: 10,
+                              spreadRadius: 7,
+                              offset: Offset(1, 1),
+                              color:Colors.grey.withOpacity(0.2)
+                          )
+                        ]
+                    ),
+                    child: TextField(
+                      decoration: InputDecoration(
+                          hintText: "Type your gender here",
+                          focusedBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                  color:Colors.white,
+                                  width: 1.0
+                              )
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                  color:Colors.white,
+                                  width: 1.0
+                              )
+                          ),
+                          border: OutlineInputBorder(
+                          )
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 10,),
+                  Text(
+                    "Phone Number",
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.black,
+                    ),
+                  ),
+                  SizedBox(height: 10,),
+                  Container(
+                    decoration: BoxDecoration(
+                        color:Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                              blurRadius: 10,
+                              spreadRadius: 7,
+                              offset: Offset(1, 1),
+                              color:Colors.grey.withOpacity(0.2)
+                          )
+                        ]
+                    ),
+                    child: TextField(
+                      decoration: InputDecoration(
+                          hintText: "Type your phone number here",
+                          focusedBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                  color:Colors.white,
+                                  width: 1.0
+                              )
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                  color:Colors.white,
+                                  width: 1.0
+                              )
+                          ),
+                          border: OutlineInputBorder(
+                          )
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 10,),
                   Text(
                     "Mail Id",
                     style: TextStyle(
@@ -81,7 +205,7 @@ class SignUpPage extends StatelessWidget {
                       color: Colors.black,
                     ),
                   ),
-                  SizedBox(height: 15,),
+                  SizedBox(height: 10,),
                   Container(
                     decoration: BoxDecoration(
                         color:Colors.white,
@@ -115,7 +239,7 @@ class SignUpPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(height: 15,),
+                  SizedBox(height: 10,),
                   Text(
                     "Password",
                     style: TextStyle(
@@ -123,7 +247,7 @@ class SignUpPage extends StatelessWidget {
                       color: Colors.black,
                     ),
                   ),
-                  SizedBox(height: 15,),
+                  SizedBox(height: 10,),
                   Container(
                     decoration: BoxDecoration(
                         color:Colors.white,

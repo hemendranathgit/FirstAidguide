@@ -41,6 +41,11 @@ class _WelcomePageState extends State<WelcomePage> {
               color: Colors.redAccent,
             ),)),
             backgroundColor: Colors.white,
+            actions: [Icon(
+              Icons.account_circle_sharp,
+              color: Colors.red,
+              size: 30,
+            ),]
           ),
           backgroundColor: Colors.white,
           body: SingleChildScrollView(

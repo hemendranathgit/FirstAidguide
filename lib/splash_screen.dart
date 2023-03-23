@@ -1,35 +1,3 @@
-//import 'dart:js';
-
-// import 'package:flutter/cupertino.dart';
-// import 'package:flutter/material.dart';
-// import 'package:sample/welcome_page.dart';
-//
-// class SplashScreen extends StatelessWidget {
-//   const SplashScreen({Key? key}) : super(key: key);
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container(
-//
-//       width: double.maxFinite,
-//       height: double.maxFinite,
-//       color: Colors.red,
-//       child: Center(
-//         child: Container(
-//           width: 100,
-//           height: 100,
-//           child: Text(
-//             'WELCOME RA PUKA', style: TextStyle(
-//             fontSize: 24,
-//             fontWeight: FontWeight.bold,
-//           ),
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-//
-// }
 import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
@@ -77,39 +45,3 @@ class _SplashScreenState extends State<SplashScreen>{
 
 }
 
-
-
-//   Widget build(BuildContext context) {
-//     width = MediaQuery.of(context).size.width;
-//     height = Me
-//     return Container(
-//       width: double.maxFinite,
-//       height: double.maxFinite,
-//       color: Colors.red,
-//       child: Center(
-//         child: Container(
-//           width: 100,
-//           height: 100,
-//           child: FutureBuilder(
-//             future: Future.delayed(Duration(seconds: 20)),
-//             builder: (context, snapshot) {
-//               if (snapshot.connectionState == ConnectionState.done) {
-//                 return Text(
-//                   'WELCOME RA PUKA',
-//                   style: TextStyle(
-//                     fontSize: 24,
-//                     fontWeight: FontWeight.bold,
-//                   ),
-//                 );
-//               } else {
-//                 return CircularProgressIndicator();
-//               }
-//             },
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
-//
-// class _Spl

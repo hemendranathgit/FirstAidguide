@@ -3,6 +3,7 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_email_sender/flutter_email_sender.dart';
 import 'package:sample/Components/custom_button.dart';
 import 'package:sample/Components/custom_textfield.dart';
+import 'package:sample/welcome_page.dart';
 
 import '../constants.dart';
 class ContactUs extends StatefulWidget {
@@ -22,13 +23,17 @@ class _ContactUsState extends State<ContactUs> {
     podugu=MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: (THEME_MODE=='0')?BLACK_COLOR:WHITE_COLOR ,
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+      ),
       body: Center(
         child: SingleChildScrollView(
           child: Container(
-            width: wedalpu/1.2,
-            height: podugu/3.7,
+            width: wedalpu/0.2,
+            height: podugu/2.7,
             child: Column(
               children: [
+                SizedBox(height: 31,),
                 Container(
                     width: wedalpu*7.7,
                     height: podugu*0.06,

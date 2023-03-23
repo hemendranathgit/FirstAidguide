@@ -22,10 +22,11 @@ class _LoginPageState extends State<LoginPage> {
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
       body: Column(
         children: [
-          SizedBox(height: 55,),
+          SizedBox(height: 65,),
           Container(
             width: w * 0.3,
             height: h * 0.2,

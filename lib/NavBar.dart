@@ -15,34 +15,6 @@ class NavBar extends StatelessWidget {
     return Drawer(
       child: Container(
         color: Colors.black,
-        // child: ListView(
-        //   children: [
-        //     Icon(
-        //       Icons.arrow_back,
-        //       color: Colors.red,
-        //     ),
-        //     SizedBox(height: 20,),
-        //     Icon(
-        //       Icons.settings,
-        //       color: Colors.white,
-        //     ),
-        //     GestureDetector(
-        //       onTap: (){
-        //         AuthController.instance.logOut();
-        //       },
-        //       child: Center(
-        //         child: Text(
-        //           "Settings",
-        //           style: TextStyle(
-        //             fontSize: 36,
-        //             fontWeight: FontWeight.bold,
-        //             color: Colors.white,
-        //           ),
-        //       ),
-        //     )
-        //     )
-        //   ],
-        // ),
 
 
 

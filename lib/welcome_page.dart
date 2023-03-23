@@ -4,6 +4,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:sample/NavBar.dart';
 import 'package:sample/auth_controller.dart';
+import 'package:sample/description%20lists/bee_Sting.dart';
+import 'package:sample/description%20lists/bleeding.dart';
+import 'package:sample/description%20lists/blisters.dart';
+import 'package:sample/description%20lists/broken_bone.dart';
+import 'package:sample/description%20lists/burns.dart';
+import 'package:sample/description%20lists/chowking.dart';
+import 'package:sample/description%20lists/frostbite.dart';
+import 'package:sample/description%20lists/nosebleeds.dart';
+import 'package:sample/description%20lists/sprains.dart';
+import 'package:sample/description%20lists/stopped_heart.dart';
 //import 'package:sidbar/NavBar.dart';
 
 class WelcomePage extends StatefulWidget {
@@ -20,44 +30,96 @@ class _WelcomePageState extends State<WelcomePage> {
   Widget build(BuildContext context) {
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
-    return Scaffold(
-        drawer: NavBar(),
-        appBar: AppBar(
-          iconTheme: IconThemeData(color: Colors.red),
-          title: Center(child: Text('First Aid Guide',style: TextStyle(
-            fontSize: 36,
-            fontWeight: FontWeight.bold,
-            color: Colors.redAccent,
-          ),)),
+    return SafeArea(
+      child: Scaffold(
+          drawer: NavBar(),
+          appBar: AppBar(
+            iconTheme: IconThemeData(color: Colors.red),
+            title: Center(child: Text('First Aid Guide',style: TextStyle(
+              fontSize: 36,
+              fontWeight: FontWeight.bold,
+              color: Colors.redAccent,
+            ),)),
+            backgroundColor: Colors.white,
+          ),
           backgroundColor: Colors.white,
-        ),
-        endDrawer: Drawer(
-
-        ),
-        backgroundColor: Colors.white,
-        // body: Column(
-        //
-        //   children: [
-        //     SizedBox(height: 147.6,),
-        //     GestureDetector(
-        //       onTap: (){
-        //         AuthController.instance.logOut();
-        //       },
-        //       child: Container(
-        //         width: w*0.09,
-        //         height: h*0.03,
-        //         decoration: BoxDecoration(
-        //             image: DecorationImage(image: AssetImage("img/menu_nav.png"
-        //             ),
-        //                 fit: BoxFit.cover
-        //             )
-        //         ),
-        //       ),
-        //     ),
-        //     SizedBox(height: 10.9,),
-        //
-        //   ],
-        // )
+          body: SingleChildScrollView(
+            child: Column(
+              children: [
+                ListTile(
+                  onTap: ()async{
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context)=>BeeSting()));
+                  },
+                  title: const Text("1.Bee Sting",style: TextStyle(fontSize: 23,
+                  fontWeight: FontWeight.bold),),
+                ),
+                ListTile(
+                  onTap: ()async{
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context)=>Bleeding()));
+                  },
+                  title: const Text("2.Bleeding",style: TextStyle(fontSize: 23,
+                      fontWeight: FontWeight.bold),),
+                ),
+                ListTile(
+                  onTap: ()async{
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context)=>Blisters()));
+                  },
+                  title: const Text("3.Blisters",style: TextStyle(fontSize: 23,
+                      fontWeight: FontWeight.bold),),
+                ),
+                ListTile(
+                  onTap: ()async{
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context)=>Broken()));
+                  },
+                  title: const Text("4. Broken Bone/Fracture",style: TextStyle(fontSize: 23,
+                      fontWeight: FontWeight.bold),),
+                ),
+                ListTile(
+                  onTap: ()async{
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context)=>Burns()));
+                  },
+                  title: const Text("5.Burns",style: TextStyle(fontSize: 23,
+                      fontWeight: FontWeight.bold),),
+                ),
+                ListTile(
+                  onTap: ()async{
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context)=>Chowking()));
+                  },
+                  title: const Text("6.chowking",style: TextStyle(fontSize: 23,
+                      fontWeight: FontWeight.bold),),
+                ),
+                ListTile(
+                  onTap: ()async{
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context)=>Frostbite()));
+                  },
+                  title: const Text("7.Frostbite",style: TextStyle(fontSize: 23,
+                      fontWeight: FontWeight.bold),),
+                ),
+                ListTile(
+                  onTap: ()async{
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context)=>Nosebleeds()));
+                  },
+                  title: const Text("8.Nosebleeds",style: TextStyle(fontSize: 23,
+                      fontWeight: FontWeight.bold),),
+                ),
+                ListTile(
+                  onTap: ()async{
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context)=>Sprains()));
+                  },
+                  title: const Text("9.Sprains",style: TextStyle(fontSize: 23,
+                      fontWeight: FontWeight.bold),),
+                ),
+                ListTile(
+                  onTap: ()async{
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context)=>StoppedHeart()));
+                  },
+                  title: const Text("10.Stopped Heart",style: TextStyle(fontSize: 23,
+                      fontWeight: FontWeight.bold),),
+                )
+              ],
+            ),
+          ),
+      ),
     );
   }
 }

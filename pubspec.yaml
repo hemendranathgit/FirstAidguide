@@ -58,14 +58,14 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
 flutter_native_splash:
-  image: img/logining.png
+  image: img/plus.png
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 flutter_icons:
   android: true
   ios: true
-  image_path: "img/logining.png"
+  image_path: "img/plus.png"
 
 # The following section is specific to Flutter packages.
 flutter:

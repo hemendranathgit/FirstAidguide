@@ -41,7 +41,7 @@ class _Chowking extends State<Chowking> {
               ),
               child:Center(
                 child: Text(
-                  "Sprains",
+                  "Chowking",
                   style: TextStyle(
                     fontSize: 30,
                     color: Colors.black,
@@ -51,15 +51,15 @@ class _Chowking extends State<Chowking> {
             ),
             SizedBox(height: 35,),
             ListTile(
-              subtitle: Text("1.Keep the limb as still as possible.\n2.Apply a cold pack. \n3.Elevate the injured part if you can do so safely. \n4.Use NSAIDs for pain. \n5.Ask your provider about any other treatment for a sprain you might need. ",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
+              subtitle: Text("1.Stand behind the person and lean them slightly forward. \n2.Put your arms around their waist. \n3.Clench your fist and place it between their belly button (navel) and rib cage. \n4.Grab your fist with your other hand. \n5.Pull your clenched fist sharply backward and upward under the person’s rib cage in 5 quick thrusts. \n6.Repeat until the object is coughed up.",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
             ),
             SizedBox(height: 35,),
             ListTile(
-              subtitle: Text("1. अंग को यथासंभव स्थिर रखें।\n2. कोल्ड पैक लगाएं।\n3. यदि आप इसे सुरक्षित रूप से कर सकते हैं तो घायल हिस्से को ऊपर उठाएं। \n4. दर्द के लिए एनएसएआईडी का प्रयोग करें। \n5. अपने प्रदाता से मोच के लिए किसी अन्य उपचार के बारे में पूछें, जिसकी आपको आवश्यकता हो सकती है।",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
+              subtitle: Text("1.व्यक्ति के पीछे खड़े हो जाएं और उन्हें थोड़ा आगे की ओर झुकाएं। \n2.अपनी बाहों को उनकी कमर के चारों ओर रखें। \n3.अपनी मुट्ठी बंद करें और इसे उनकी नाभि (नाभि) और पसली के पिंजरे के बीच रखें। \n4.अपनी मुट्ठी को अपने दूसरे हाथ से पकड़ें। \n5.अपनी बंद मुट्ठी को तेजी से पीछे की ओर और ऊपर की ओर व्यक्ति की पसली के पिंजरे के नीचे 5 तेज झटके में खींचें। \n6.तब तक दोहराएं जब तक कि वस्तु खांसी न हो जाए।",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
             ),
             SizedBox(height: 35,),
             ListTile(
-              subtitle: Text("1.Håll lemmen så stilla som möjligt. \n2.Applicera en kall förpackning. \n3.Höj den skadade delen om du kan göra det på ett säkert sätt. \n4.Använd NSAID mot smärta. \n5.Fråga din vårdgivare om någon annan behandling för en stukning du kan behöva. \n",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
+              subtitle: Text("1.Ställ dig bakom personen och luta honom något framåt. \n2.Lägg armarna runt deras midja. \n3.Knyt näven och placera den mellan naveln och bröstkorgen. \n4.Ta tag i näven med din andra hand. \n5.Dra din knutna näve kraftigt bakåt och uppåt under personens bröstkorg i 5 snabba stötar. \n6.Upprepa tills föremålet är upphostat.",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
             ),
           ],
         ),

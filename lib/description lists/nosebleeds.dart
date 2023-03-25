@@ -41,7 +41,7 @@ class _Nosebleeds extends State<Nosebleeds> {
               ),
               child:Center(
                 child: Text(
-                  "Sprains",
+                  "Nosebleeds",
                   style: TextStyle(
                     fontSize: 30,
                     color: Colors.black,
@@ -51,15 +51,15 @@ class _Nosebleeds extends State<Nosebleeds> {
             ),
             SizedBox(height: 35,),
             ListTile(
-              subtitle: Text("1.Keep the limb as still as possible.\n2.Apply a cold pack. \n3.Elevate the injured part if you can do so safely. \n4.Use NSAIDs for pain. \n5.Ask your provider about any other treatment for a sprain you might need. ",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
+              subtitle: Text("1.Lean slightly forward, not back. \n2.Pinch your nose just below the bridge. It needs to be high enough that the nostrils are not pinched closed. \n3.After five minutes, check to see if the bleeding has stopped. If not, continue pinching and check after another 10 minutes. \n4.Apply a cold pack to the bridge of your nose while you’re pinching.",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
             ),
             SizedBox(height: 35,),
             ListTile(
-              subtitle: Text("1. अंग को यथासंभव स्थिर रखें।\n2. कोल्ड पैक लगाएं।\n3. यदि आप इसे सुरक्षित रूप से कर सकते हैं तो घायल हिस्से को ऊपर उठाएं। \n4. दर्द के लिए एनएसएआईडी का प्रयोग करें। \n5. अपने प्रदाता से मोच के लिए किसी अन्य उपचार के बारे में पूछें, जिसकी आपको आवश्यकता हो सकती है।",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
+              subtitle: Text("1.थोड़ा आगे झुकें, पीछे नहीं। \n2.अपनी नाक को पुल के ठीक नीचे दबाएं।  यह इतना ऊंचा होना चाहिए कि नासिका छिद्र बंद न हों। \n3.पांच मिनट के बाद देखें कि खून बहना बंद हो गया है या नहीं।  यदि नहीं, तो पिंच करना जारी रखें और 10 मिनट के बाद चेक करें। \n4.जब आप चुटकी बजा रहे हों तो अपनी नाक के पुल पर एक ठंडा पैक लगाएं।",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
             ),
             SizedBox(height: 35,),
             ListTile(
-              subtitle: Text("1.Håll lemmen så stilla som möjligt. \n2.Applicera en kall förpackning. \n3.Höj den skadade delen om du kan göra det på ett säkert sätt. \n4.Använd NSAID mot smärta. \n5.Fråga din vårdgivare om någon annan behandling för en stukning du kan behöva. \n",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
+              subtitle: Text("1.Luta dig något framåt, inte bakåt. \n2.Nyp näsan precis nedanför bron.  Den måste vara tillräckligt hög så att näsborrarna inte kläms ihop. \n3.Kontrollera efter fem minuter om blödningen har upphört.  Om inte, fortsätt att nypa och kontrollera efter ytterligare 10 minuter. \n4.Applicera en kall packning på näsryggen medan du nyper.",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
             ),
           ],
         ),

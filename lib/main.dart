@@ -7,7 +7,6 @@ import 'package:sample/signup_page.dart';
 import 'package:sample/splash_screen.dart';
 import 'package:sample/welcome_page.dart';
 import 'package:get/get.dart';
-import 'package:sample/xd_google_pixel6_pro1.dart';
 
 
 Future<void> main() async {

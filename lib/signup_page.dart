@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:sample/auth_controller.dart';
+import 'package:sample/login_page.dart';
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({Key? key}) : super(key: key);
@@ -314,7 +315,7 @@ class SignUpPage extends StatelessWidget {
             ),
             SizedBox(height: 10.9,),
             RichText(text: TextSpan(
-                recognizer: TapGestureRecognizer()..onTap=()=>Get.back(),
+                recognizer: TapGestureRecognizer()..onTap=()=>Get.to(()=>LoginPage()),
                 text: "Have an account?",
                 style: TextStyle(
                     fontSize: 20,

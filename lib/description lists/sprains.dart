@@ -56,7 +56,7 @@ class _Sprains extends State<Sprains> {
             ),
             SizedBox(height: 35,),
             ListTile(
-              subtitle: Text("1. अंग को यथासंभव स्थिर रखें।\n2. कोल्ड पैक लगाएं।\n3. यदि आप इसे सुरक्षित रूप से कर सकते हैं तो घायल हिस्से को ऊपर उठाएं। \n4. दर्द के लिए एनएसएआईडी का प्रयोग करें। \n5. अपने प्रदाता से मोच के लिए किसी अन्य उपचार के बारे में पूछें, जिसकी आपको आवश्यकता हो सकती है।",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
+              subtitle: Text("1. अंग को यथासंभव स्थिर रखें।\n2. कोल्ड पैक लगाएं।\n3. यदि आप इसे सुरक्षित रूप से कर सकते हैं तो घायल हिस्से को ऊपर उठाएं। \n4.दर्द के लिए एनएसएआईडी का प्रयोग करें। \n5. अपने प्रदाता से मोच के लिए किसी अन्य उपचार के बारे में पूछें, जिसकी आपको आवश्यकता हो सकती है।",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
             ),
             SizedBox(height: 35,),
             ListTile(

@@ -41,7 +41,7 @@ class _Frostbite extends State<Frostbite> {
               ),
               child:Center(
                 child: Text(
-                  "Sprains",
+                  "Frostbite",
                   style: TextStyle(
                     fontSize: 30,
                     color: Colors.black,
@@ -51,15 +51,15 @@ class _Frostbite extends State<Frostbite> {
             ),
             SizedBox(height: 35,),
             ListTile(
-              subtitle: Text("1.Keep the limb as still as possible.\n2.Apply a cold pack. \n3.Elevate the injured part if you can do so safely. \n4.Use NSAIDs for pain. \n5.Ask your provider about any other treatment for a sprain you might need. ",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
+              subtitle: Text("1.Get out of the cold. \n2.Put the affected area in warm water (98 to 105 degrees) for 20 to 30 minutes. \n3.Do not rub the affected area. \n4.Do not use sources of dry heat (e.g., heating pads, fireplace) \n5.For fingers and toes, you can put clean cotton balls between them after they have warmed up. \n6.Loosely wrap the area with bandages. \n7.Use Tylenol (acetaminophen) or Advil (ibuprofen) for pain. \n8.Get medical attention as soon as possible.",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
             ),
             SizedBox(height: 35,),
             ListTile(
-              subtitle: Text("1. अंग को यथासंभव स्थिर रखें।\n2. कोल्ड पैक लगाएं।\n3. यदि आप इसे सुरक्षित रूप से कर सकते हैं तो घायल हिस्से को ऊपर उठाएं। \n4. दर्द के लिए एनएसएआईडी का प्रयोग करें। \n5. अपने प्रदाता से मोच के लिए किसी अन्य उपचार के बारे में पूछें, जिसकी आपको आवश्यकता हो सकती है।",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
+              subtitle: Text("1.ठंड से बाहर निकलें। \n2.प्रभावित हिस्से को 20 से 30 मिनट के लिए गर्म पानी (98 से 105 डिग्री) में रखें। \n3.प्रभावित क्षेत्र को रगड़ें नहीं। \n4.सूखी गर्मी के स्रोतों का उपयोग न करें (जैसे, हीटिंग पैड, फायरप्लेस) \n5.उंगलियों और पैर की उंगलियों के लिए, गर्म होने के बाद आप उनके बीच साफ रुई रख सकते हैं। \n6.क्षेत्र को पट्टियों से ढीला लपेटें। \n7.दर्द के लिए टाइलेनॉल (एसिटामिनोफेन) या एडविल (इबुप्रोफेन) का प्रयोग करें। \n8.ितनी जल्दी हो सके चिकित्सा ध्यान दें।",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
             ),
             SizedBox(height: 35,),
             ListTile(
-              subtitle: Text("1.Håll lemmen så stilla som möjligt. \n2.Applicera en kall förpackning. \n3.Höj den skadade delen om du kan göra det på ett säkert sätt. \n4.Använd NSAID mot smärta. \n5.Fråga din vårdgivare om någon annan behandling för en stukning du kan behöva. \n",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
+              subtitle: Text("1.Kom ur kylan. \n2.Lägg det drabbade området i varmt vatten (98 till 105 grader) i 20 till 30 minuter. \n3.Gnugga inte det drabbade området. \n4.Använd inte källor för torr värme (t.ex. värmekuddar, öppen spis) \n5.För fingrar och tår kan du lägga rena bomullstussar mellan dem efter att de har värmts upp. \n6.Linda området löst med bandage. \n7.Använd Tylenol (acetaminophen) eller Advil (ibuprofen) mot smärta. \n8.Få läkarvård så snart som möjligt.",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
             ),
           ],
         ),

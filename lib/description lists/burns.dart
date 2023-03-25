@@ -41,7 +41,7 @@ class _Burns extends State<Burns> {
               ),
               child:Center(
                 child: Text(
-                  "Sprains",
+                  "Bruns",
                   style: TextStyle(
                     fontSize: 30,
                     color: Colors.black,
@@ -51,15 +51,15 @@ class _Burns extends State<Burns> {
             ),
             SizedBox(height: 35,),
             ListTile(
-              subtitle: Text("1.Keep the limb as still as possible.\n2.Apply a cold pack. \n3.Elevate the injured part if you can do so safely. \n4.Use NSAIDs for pain. \n5.Ask your provider about any other treatment for a sprain you might need. ",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
+              subtitle: Text("1.Flush the burned area with cool running water for several minutes. Do not use ice. \n2.Apply a light gauze bandage. If the burn is minor, you can put on an ointment, like aloe vera, before you cover it. \n3.Take Motrin (ibuprofen) or Tylenol (acetaminophen) for pain relief if you need it. \n4.Do not break any blisters that form.",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
             ),
             SizedBox(height: 35,),
             ListTile(
-              subtitle: Text("1. अंग को यथासंभव स्थिर रखें।\n2. कोल्ड पैक लगाएं।\n3. यदि आप इसे सुरक्षित रूप से कर सकते हैं तो घायल हिस्से को ऊपर उठाएं। \n4. दर्द के लिए एनएसएआईडी का प्रयोग करें। \n5. अपने प्रदाता से मोच के लिए किसी अन्य उपचार के बारे में पूछें, जिसकी आपको आवश्यकता हो सकती है।",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
+              subtitle: Text("1.जले हुए स्थान को ठंडे बहते पानी से कई मिनट तक धोएं।  बर्फ का प्रयोग न करें। \n2.हल्की गौज पट्टी लगाएं।  यदि जला मामूली है, तो आप इसे कवर करने से पहले एलोवेरा की तरह एक मरहम लगा सकते हैं। \n3.जरूरत पड़ने पर दर्द से राहत के लिए मोट्रिन (इबुप्रोफेन) या टाइलेनॉल (एसिटामिनोफेन) लें। \n4.बनने वाले किसी भी फफोले को तोड़ें नहीं।",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
             ),
             SizedBox(height: 35,),
             ListTile(
-              subtitle: Text("1.Håll lemmen så stilla som möjligt. \n2.Applicera en kall förpackning. \n3.Höj den skadade delen om du kan göra det på ett säkert sätt. \n4.Använd NSAID mot smärta. \n5.Fråga din vårdgivare om någon annan behandling för en stukning du kan behöva. \n",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
+              subtitle: Text("1.Spola det brända området med kallt rinnande vatten i flera minuter.  Använd inte is. \n2.Applicera ett lätt gasbinda.  Om brännskadan är mindre kan du lägga på en salva, som aloe vera, innan du täcker den. \n3.Ta Motrin (ibuprofen) eller Tylenol (acetaminophen) för smärtlindring om du behöver det. \n4.Bryt inte några blåsor som bildas.",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
             ),
           ],
         ),

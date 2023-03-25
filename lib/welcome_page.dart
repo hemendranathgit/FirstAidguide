@@ -14,7 +14,7 @@ import 'package:sample/description%20lists/frostbite.dart';
 import 'package:sample/description%20lists/nosebleeds.dart';
 import 'package:sample/description%20lists/sprains.dart';
 import 'package:sample/description%20lists/stopped_heart.dart';
-//import 'package:sidbar/NavBar.dart';
+import 'package:sample/profile.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({Key? key}) : super(key: key);
@@ -41,11 +41,21 @@ class _WelcomePageState extends State<WelcomePage> {
               color: Colors.redAccent,
             ),)),
             backgroundColor: Colors.white,
-            actions: [Icon(
-              Icons.account_circle_sharp,
-              color: Colors.red,
-              size: 30,
-            ),]
+            actions: [
+              IconButton(
+                icon: Icon(
+                  Icons.account_circle_sharp,
+                  color: Colors.red,
+                  size: 30,
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => profile()),
+                  );
+                },
+              ),
+            ],
           ),
           backgroundColor: Colors.white,
           body: SingleChildScrollView(

@@ -41,7 +41,7 @@ class _BeeSting extends State<BeeSting> {
               ),
               child:Center(
                 child: Text(
-                  "Sprains",
+                  "Bee Sting",
                   style: TextStyle(
                     fontSize: 30,
                     color: Colors.black,
@@ -51,15 +51,15 @@ class _BeeSting extends State<BeeSting> {
             ),
             SizedBox(height: 35,),
             ListTile(
-              subtitle: Text("1.Keep the limb as still as possible.\n2.Apply a cold pack. \n3.Elevate the injured part if you can do so safely. \n4.Use NSAIDs for pain. \n5.Ask your provider about any other treatment for a sprain you might need. ",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
+              subtitle: Text("1.Get the stinger out immediately. This needs to happen to keep it from injecting more venom into the person. The method you use does not matter—what’s most important is that this is done quickly. \n2.Wash the area with soap and water. \n3.Use a cold pack to help with the swelling at the site; however, do not apply ice directly to the skin. \n4.Use an allergy medication or antihistamine (like Benadryl) to reduce swelling and itching. \n5.Use Tylenol (acetaminophen) or Advil (ibuprofen) for pain.",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
             ),
             SizedBox(height: 35,),
             ListTile(
-              subtitle: Text("1. अंग को यथासंभव स्थिर रखें।\n2. कोल्ड पैक लगाएं।\n3. यदि आप इसे सुरक्षित रूप से कर सकते हैं तो घायल हिस्से को ऊपर उठाएं। \n4. दर्द के लिए एनएसएआईडी का प्रयोग करें। \n5. अपने प्रदाता से मोच के लिए किसी अन्य उपचार के बारे में पूछें, जिसकी आपको आवश्यकता हो सकती है।",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
+              subtitle: Text("1.दंश को तुरंत बाहर निकालें।  इसे व्यक्ति में अधिक जहर इंजेक्ट करने से रोकने के लिए ऐसा करने की आवश्यकता है।  आपके द्वारा उपयोग की जाने वाली विधि कोई मायने नहीं रखती है—सबसे महत्वपूर्ण यह है कि यह जल्दी से किया जाता है। \n2. जगह को साबुन और पानी से धोएं। \n3.साइट पर निगलने में मदद करने के लिए एक ठंडा पैक लें; हालांकि, बर्फ को सीधे त्वचा पर न लगाएं। \n4.हमारी एलर्जी की दवा या एंटीहिस्टामाइन (जैसे बेनाड्रिल) के साथ निगलने और खुजली को कम करें। \n5.दर्द के लिए टाइलेनॉल (एस्ट्रामिनोफेन) या एडविल (इबुप्रोफेन)।",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
             ),
             SizedBox(height: 35,),
             ListTile(
-              subtitle: Text("1.Håll lemmen så stilla som möjligt. \n2.Applicera en kall förpackning. \n3.Höj den skadade delen om du kan göra det på ett säkert sätt. \n4.Använd NSAID mot smärta. \n5.Fråga din vårdgivare om någon annan behandling för en stukning du kan behöva. \n",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
+              subtitle: Text("1.Ta ut stingern omedelbart.  Detta måste hända för att det inte ska injicera mer gift i personen.  Metoden du använder spelar ingen roll – det viktigaste är att detta görs snabbt. \n2.Tvätta området med tvål och vatten. \n3.Använd en kall packning för att hjälpa till med att svälja till platsen; Applicera dock inte is direkt på huden. \n4.Minska sväljning och klåda med vår allergimedicin eller ett antihistamin (som Benadryl). \n5.Använd Tylenol (Astraminophen) eller Advil (Ibuprofen) mot smärta.",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
             ),
           ],
         ),

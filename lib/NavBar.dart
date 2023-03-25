@@ -31,16 +31,6 @@ class NavBar extends StatelessWidget {
           SizedBox(height: 30,),
         ListTile(
           leading: Icon(
-            Icons.arrow_back,
-            color: Colors.red,
-            size: 30,
-          ),
-          onTap: () {
-            AuthController.instance.logOut();
-          },
-        ),
-        ListTile(
-          leading: Icon(
               Icons.settings,
               size: 30,color: Colors.grey
           ),

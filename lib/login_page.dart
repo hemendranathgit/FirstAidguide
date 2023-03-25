@@ -7,6 +7,7 @@ import 'package:sample/signup_page.dart';
 import 'package:sample/signup_page.dart';
 import 'package:sample/signup_page.dart';
 import 'package:sample/signup_page.dart';
+import 'package:sample/Components/ForgotPassword.dart';
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -132,13 +133,21 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 SizedBox(height: 15.7,),
-                    Text(
-                      "Forgot Password?",
-                      style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.red[500]
-                      ),
-                    )
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ForgotPassword()),
+                    );
+                  },
+                  child: Text(
+                    "Forgot Password?",
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.red[500]
+                    ),
+                  ),
+                )
 
               ],
             ),
@@ -190,7 +199,7 @@ class _LoginPageState extends State<LoginPage> {
           SizedBox(height: 10.9,),
           GestureDetector(
             onTap: (){
-              AuthController().signInWithGoogle();
+              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context)=>SignUpPage()));
             },
             child: Container(
               width: w*0.9,
@@ -220,7 +229,8 @@ class _LoginPageState extends State<LoginPage> {
           ),//signup button
           SizedBox(height: 17.25,),
           GestureDetector(
-            onTap: (){
+            onTap: () async{
+              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context)=>SignUpPage()));
               AuthController().signInWithGoogle();
             },
             child: Container(

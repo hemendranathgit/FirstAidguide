@@ -41,7 +41,7 @@ class _StoppedHeart extends State<StoppedHeart> {
               ),
               child:Center(
                 child: Text(
-                  "Sprains",
+                  "Stopped Heart",
                   style: TextStyle(
                     fontSize: 30,
                     color: Colors.black,
@@ -51,15 +51,15 @@ class _StoppedHeart extends State<StoppedHeart> {
             ),
             SizedBox(height: 35,),
             ListTile(
-              subtitle: Text("1.Keep the limb as still as possible.\n2.Apply a cold pack. \n3.Elevate the injured part if you can do so safely. \n4.Use NSAIDs for pain. \n5.Ask your provider about any other treatment for a sprain you might need. ",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
+              subtitle: Text("1.Start doing chest compressions on the person who needs help. Using both your hands, push down hard and fast in the center of the person’s chest. Let their chest come back up naturally between compressions. Keep going until someone with more training arrives. \n2.If you’re trained in CPR, you can use chest compressions and rescue breathing. \n3.If it’s available, use an AED. However, do not put off doing chest compressions to go look for an AED. If possible, instruct someone else to go find the device and bring it to you.",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
             ),
             SizedBox(height: 35,),
             ListTile(
-              subtitle: Text("1. अंग को यथासंभव स्थिर रखें।\n2. कोल्ड पैक लगाएं।\n3. यदि आप इसे सुरक्षित रूप से कर सकते हैं तो घायल हिस्से को ऊपर उठाएं। \n4. दर्द के लिए एनएसएआईडी का प्रयोग करें। \n5. अपने प्रदाता से मोच के लिए किसी अन्य उपचार के बारे में पूछें, जिसकी आपको आवश्यकता हो सकती है।",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
+              subtitle: Text("1. जिस व्यक्ति को मदद की जरूरत है, उसकी छाती को दबाना शुरू करें।  अपने दोनों हाथों का उपयोग करते हुए, व्यक्ति की छाती के बीच में जोर से और तेजी से धक्का दें।  दबावों के बीच उनकी छाती को स्वाभाविक रूप से ऊपर आने दें।  तब तक चलते रहें जब तक कोई अधिक प्रशिक्षण वाला व्यक्ति न आ जाए। \n2.यदि आप सीपीआर में प्रशिक्षित हैं, तो आप छाती को दबा सकते हैं और श्वास को बचा सकते हैं। \n3.यदि यह उपलब्ध है, तो AED का उपयोग करें।  हालांकि, एईडी की तलाश के लिए छाती को दबाना बंद न करें।  अगर संभव हो, तो किसी और को निर्देश दें कि वह जाकर डिवाइस को ढूंढे और उसे आपके पास लाए।.",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
             ),
             SizedBox(height: 35,),
             ListTile(
-              subtitle: Text("1.Håll lemmen så stilla som möjligt. \n2.Applicera en kall förpackning. \n3.Höj den skadade delen om du kan göra det på ett säkert sätt. \n4.Använd NSAID mot smärta. \n5.Fråga din vårdgivare om någon annan behandling för en stukning du kan behöva. \n",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
+              subtitle: Text("11.Börja göra bröstkompressioner på den som behöver hjälp.  Använd båda händerna och tryck ner hårt och snabbt i mitten av personens bröst.  Låt deras bröst komma upp naturligt mellan kompressionerna.  Fortsätt tills någon med mer träning kommer. \n2.Om du är utbildad i HLR kan du använda bröstkompressioner och räddningsandning. \n3.Om det är tillgängligt, använd en AED.  Men skjut inte upp att göra bröstkompressioner för att leta efter en AED.  Om möjligt, instruera någon annan att leta upp enheten och ta med den till dig.\n",style: TextStyle(fontSize: 25,decorationColor: Colors.black),overflow: TextOverflow.visible,textAlign: TextAlign.justify,),
             ),
           ],
         ),

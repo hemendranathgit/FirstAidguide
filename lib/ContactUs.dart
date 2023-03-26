@@ -50,7 +50,7 @@ class _ContactUsState extends State<ContactUs> {
                 custom_textfield(hinttitle: "Add text",controller: bodycontroller,),
                 SizedBox(height: podugu/40,),
                 custom_button(() async {
-                 }, "Send Massage"),
+                 }, "Send Massage "),
                 Text("Thank you for reaching out!")
 
               ],

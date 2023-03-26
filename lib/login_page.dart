@@ -135,10 +135,7 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(height: 15.7,),
                 GestureDetector(
                   onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => ForgotPassword()),
-                    );
+                    AuthController.instance.login(emailController.text.trim(), passwordController.text.trim());
                   },
                   child: Text(
                     "Forgot Password?",
@@ -230,7 +227,6 @@ class _LoginPageState extends State<LoginPage> {
           SizedBox(height: 17.25,),
           GestureDetector(
             onTap: () async{
-              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context)=>SignUpPage()));
               AuthController().signInWithGoogle();
             },
             child: Container(

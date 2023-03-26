@@ -15,6 +15,8 @@ import 'package:sample/description%20lists/nosebleeds.dart';
 import 'package:sample/description%20lists/sprains.dart';
 import 'package:sample/description%20lists/stopped_heart.dart';
 import 'package:sample/profile.dart';
+import 'package:sample/description lists/First_Aid_Kit.dart';
+import 'package:sample/description lists/emg_call.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({Key? key}) : super(key: key);
@@ -130,7 +132,30 @@ class _WelcomePageState extends State<WelcomePage> {
                   },
                   title: const Text("10.Stopped Heart",style: TextStyle(fontSize: 23,
                       fontWeight: FontWeight.bold),),
-                )
+                ),
+                Padding(padding: EdgeInsets.all(45),
+                  child: ListTile(
+                    leading: IconButton(
+                      iconSize: 70,
+                      color: Colors.red,
+                      onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const Firstaidkit()),);
+                      },
+                      icon: Icon(
+                        Icons.medical_services_rounded,
+                      ),
+                    ),
+                    trailing: IconButton(
+                      iconSize: 70,
+                      color: Colors.red,
+                      onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const EmgCall()),);
+                      },
+                      icon: Icon(
+                        Icons.add_call,
+                      ),
+                    ),
+                  ),),
               ],
             ),
           ),

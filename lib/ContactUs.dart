@@ -50,14 +50,7 @@ class _ContactUsState extends State<ContactUs> {
                 custom_textfield(hinttitle: "Add text",controller: bodycontroller,),
                 SizedBox(height: podugu/40,),
                 custom_button(() async {
-                 var email= Email(
-                    body: bodycontroller.text,
-                    recipients: ['hemendranath0573@gmail.com'],
-                    isHTML: false,
-                  );
-                   await FlutterEmailSender.send(email);
-                   EasyLoading.showToast('successfully!!');
-                }, "Send Massage"),
+                 }, "Send Massage"),
                 Text("Thank you for reaching out!")
 
               ],

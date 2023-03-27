@@ -14,7 +14,10 @@ class _Firstaidkit extends State<Firstaidkit> {
   Widget build(BuildContext context) {
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
-    return Scaffold(
+    return WillPopScope( onWillPop: () async{
+      return false;
+    },
+    child :Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -64,6 +67,7 @@ class _Firstaidkit extends State<Firstaidkit> {
           ],
         ),
       ),
+    ),
     );
   }
 }

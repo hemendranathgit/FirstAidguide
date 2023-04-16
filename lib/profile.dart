@@ -73,7 +73,7 @@ child: ClipRRect(
       errorBuilder: (BuildContext context, Object exception,
           StackTrace? stackTrace) {
         return
-          Image.asset("img/IMG_1405.JPG",
+          Image.asset("img/plus.png",
           );
       },
       loadingBuilder: (BuildContext context, Widget child,
@@ -133,6 +133,8 @@ child: ClipRRect(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   custom_heading_text( USER_PROFILE==null?"":USER_PROFILE['name']??" "),
+                  Text("First Aid user"),
+
                   GestureDetector(
                       onTap: (){
                         var subject=TextEditingController();
@@ -152,6 +154,8 @@ child: ClipRRect(
                                 width: MediaQuery.of(context).size.width,
                                 child: SizedBox.expand(child:
                                 Column(children: [
+
+
                                   custom_textfield(hinttitle: 'Name',controller: subject,),
                                   SizedBox(height: 15,),
                                   custom_button(() async {
@@ -200,216 +204,12 @@ child: ClipRRect(
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Text("Age:",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color:(THEME_MODE=='0')?WHITE_COLOR:BLACK_COLOR),),
-                  Text("${ USER_PROFILE==null?"":USER_PROFILE['age']??""} years",style: TextStyle(fontSize: 20,color:(THEME_MODE=='0')?WHITE_COLOR:BLACK_COLOR),),
-                  GestureDetector(
-                      onTap: (){
-                        var subject=TextEditingController();
 
-                        showGeneralDialog(
-                          context: context,
-                          barrierLabel: "Barrier",
-                          barrierDismissible: true,
-                          barrierColor: BLACK_COLOR.withOpacity(0.5),
-                          transitionDuration: Duration(milliseconds: 700),
-                          pageBuilder: (_, __, ___) {
-                            return Center(
-                              child: Container(
-                                color: (THEME_MODE=='1')?WHITE_COLOR:BLACK_COLOR,
-                                height: 200,
-                                padding: EdgeInsets.only(left: 20,right: 20,top: 20,bottom: 20),
-                                width: MediaQuery.of(context).size.width,
-                                child: SizedBox.expand(child:
-                                Column(children: [
-                                  custom_textfield(hinttitle: 'Age',controller: subject,),
-                                  SizedBox(height: 15,),
-                                  custom_button(() async {
-                                    try {
-                                      if(subject.text.trim().isEmpty)return;
-                                      await set_profile(imagefile, USER_PROFILE['image']??"", USER_PROFILE['name']??"", subject.text, USER_PROFILE['phone']??"", USER_PROFILE['gender']??"");
-                                      await get_profile();
-                                      if(mounted)
-                                        setState(() {
+                  Text("Email: ${USER_PROFILE==null?"":USER_PROFILE['Email']??" "}", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color:(THEME_MODE=='0')?WHITE_COLOR:BLACK_COLOR)),
+                  Text("**********"),
 
-                                        });
-                                      Navigator.pop(context);
-                                    }catch(e){
-                                      print(e);
-                                    }finally{
-                                    }
-                                  }, 'Edit')
-                                ],)
-                                ),
-                                margin: EdgeInsets.symmetric(horizontal: 20),
-                              ),
-                            );
-                          },
-                          transitionBuilder: (_, anim, __, child) {
-                            Tween<Offset> tween;
-                            if (anim.status == AnimationStatus.reverse) {
-                              tween = Tween(begin: Offset(-1, 0), end: Offset.zero);
-                            } else {
-                              tween = Tween(begin: Offset(1, 0), end: Offset.zero);
-                            }
-
-                            return SlideTransition(
-                              position: tween.animate(anim),
-                              child: FadeTransition(
-                                opacity: anim,
-                                child: child,
-                              ),
-                            );
-                          },
-                        );
-                      },
-                      child: Icon(Icons.edit,color: (THEME_MODE=='0')?WHITE_COLOR:BLACK_COLOR,)),
-                ],
-              ),
-              SizedBox(height: hght/60,),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Text("Gender:",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color:(THEME_MODE=='0')?WHITE_COLOR:BLACK_COLOR),),
-                  Text( USER_PROFILE==null?"":USER_PROFILE['gender']??"",style: TextStyle(fontSize: 20,color:(THEME_MODE=='0')?WHITE_COLOR:BLACK_COLOR),),
-                  GestureDetector(
-                      onTap: (){
-                        var subject=TextEditingController();
-
-                        showGeneralDialog(
-                          context: context,
-                          barrierLabel: "Barrier",
-                          barrierDismissible: true,
-                          barrierColor: BLACK_COLOR.withOpacity(0.5),
-                          transitionDuration: Duration(milliseconds: 700),
-                          pageBuilder: (_, __, ___) {
-                            return Center(
-                              child: Container(
-                                color:(THEME_MODE=='1')?WHITE_COLOR:BLACK_COLOR,
-                                height: 200,
-                                padding: EdgeInsets.only(left: 20,right: 20,top: 20,bottom: 20),
-                                width: MediaQuery.of(context).size.width,
-                                child: SizedBox.expand(child:
-                                Column(children: [
-                                  custom_textfield(hinttitle: 'Gender',controller: subject,),
-                                  SizedBox(height: 15,),
-                                  custom_button(() async {
-                                    try {
-                                      if(subject.text.trim().isEmpty)return;
-                                      await set_profile(imagefile, USER_PROFILE['image']??"", USER_PROFILE['name']??"", USER_PROFILE['age']??"", USER_PROFILE['phone']??"", subject.text);
-                                      await get_profile();
-                                      if(mounted)
-                                        setState(() {
-
-                                        });
-                                      Navigator.pop(context);
-                                    }catch(e){
-                                      print(e);
-                                    }finally{
-                                    }
-                                  }, 'Edit')
-                                ],)
-                                ),
-                                margin: EdgeInsets.symmetric(horizontal: 20),
-                              ),
-                            );
-                          },
-                          transitionBuilder: (_, anim, __, child) {
-                            Tween<Offset> tween;
-                            if (anim.status == AnimationStatus.reverse) {
-                              tween = Tween(begin: Offset(-1, 0), end: Offset.zero);
-                            } else {
-                              tween = Tween(begin: Offset(1, 0), end: Offset.zero);
-                            }
-
-                            return SlideTransition(
-                              position: tween.animate(anim),
-                              child: FadeTransition(
-                                opacity: anim,
-                                child: child,
-                              ),
-                            );
-                          },
-                        );
-                      },
-                      child: Icon(Icons.edit,color:(THEME_MODE=='0')?WHITE_COLOR:BLACK_COLOR)),
-                ],
-              ),
-              SizedBox(height: hght/60,),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Text("E-mail:",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color:(THEME_MODE=='0')?WHITE_COLOR:BLACK_COLOR),),
-                  Container(width: wdth/1.4,child: SingleChildScrollView( scrollDirection: Axis.horizontal,child: Text( USER_PROFILE==null?"":USER_PROFILE['email']??"",style: TextStyle(fontSize: 20,color:(THEME_MODE=='0')?WHITE_COLOR:BLACK_COLOR),))),
+                  Container(width: wdth/1.2,child: SingleChildScrollView( scrollDirection: Axis.horizontal,child: Text( USER_PROFILE==null?"":USER_PROFILE['email']??"",style: TextStyle(fontSize: 20,color:(THEME_MODE=='0')?WHITE_COLOR:BLACK_COLOR),))),
                  // Icon(Icons.edit),
-                ],
-              ),
-              SizedBox(height: hght/60,),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Text("Phone Number:",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color:(THEME_MODE=='0')?WHITE_COLOR:BLACK_COLOR),),
-                  Text( USER_PROFILE==null?"":USER_PROFILE['phone']??"",style: TextStyle(fontSize: 20,color:(THEME_MODE=='0')?WHITE_COLOR:BLACK_COLOR),),
-                  GestureDetector(
-                      onTap: (){
-                        var subject=TextEditingController();
-
-                        showGeneralDialog(
-                          context: context,
-                          barrierLabel: "Barrier",
-                          barrierDismissible: true,
-                          barrierColor: BLACK_COLOR.withOpacity(0.5),
-                          transitionDuration: Duration(milliseconds: 700),
-                          pageBuilder: (_, __, ___) {
-                            return Center(
-                              child: Container(
-                                color:(THEME_MODE=='1')?WHITE_COLOR:BLACK_COLOR,
-                                height: 200,
-                                padding: EdgeInsets.only(left: 20,right: 20,top: 20,bottom: 20),
-                                width: MediaQuery.of(context).size.width,
-                                child: SizedBox.expand(child:
-                                Column(children: [
-                                  custom_textfield(hinttitle: 'Phone',controller: subject,),
-                                  SizedBox(height: 15,),
-                                  custom_button(() async {
-                                    try {
-                                      if(subject.text.trim().isEmpty)return;
-                                      await set_profile(imagefile, USER_PROFILE['image']??"", USER_PROFILE['name']??"", USER_PROFILE['age']??"", subject.text, USER_PROFILE['gender']??"");
-                                      await get_profile();
-                                      if(mounted)
-                                        setState(() {
-
-                                        });
-                                      Navigator.pop(context);
-                                    }catch(e){
-                                      print(e);
-                                    }finally{
-                                    }
-                                  }, 'Edit')
-                                ],)
-                                ),
-                                margin: EdgeInsets.symmetric(horizontal: 20),
-                              ),
-                            );
-                          },
-                          transitionBuilder: (_, anim, __, child) {
-                            Tween<Offset> tween;
-                            if (anim.status == AnimationStatus.reverse) {
-                              tween = Tween(begin: Offset(-1, 0), end: Offset.zero);
-                            } else {
-                              tween = Tween(begin: Offset(1, 0), end: Offset.zero);
-                            }
-
-                            return SlideTransition(
-                              position: tween.animate(anim),
-                              child: FadeTransition(
-                                opacity: anim,
-                                child: child,
-                              ),
-                            );
-                          },
-                        );
-                      },
-                      child: Icon(Icons.edit,color:(THEME_MODE=='0')?WHITE_COLOR:BLACK_COLOR)),
                 ],
               ),
               SizedBox(height: hght/60,),
@@ -610,7 +410,5 @@ if(mounted)
       },
     );
   }
-
-
 
 }

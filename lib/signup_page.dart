@@ -4,17 +4,24 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:sample/auth_controller.dart';
 import 'package:sample/login_page.dart';
+import 'package:firebase_database/firebase_database.dart';
+
+
+
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     var emailController = TextEditingController();
     var passwordController = TextEditingController();
+    var genderController = TextEditingController();
+    var ageController = TextEditingController();
+    var nameController = TextEditingController();
 
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
+
     return Scaffold(
 
         backgroundColor: Colors.white,
@@ -58,8 +65,9 @@ class SignUpPage extends StatelessWidget {
                         ]
                     ),
                     child: TextField(
+                      controller: nameController,
                       decoration: InputDecoration(
-                          hintText: "Type your age here",
+                          hintText: "Type your name here",
                           focusedBorder: OutlineInputBorder(
                               borderSide: BorderSide(
                                   color:Colors.white,
@@ -77,7 +85,6 @@ class SignUpPage extends StatelessWidget {
                       ),
                     ),
                   ),
-
                   SizedBox(height: 15,),
                   Text(
                     "Mail Id",
@@ -170,6 +177,8 @@ class SignUpPage extends StatelessWidget {
             SizedBox(height: 28.6,),
             GestureDetector(
               onTap: (){
+                if(nameController.text.isNotEmpty)
+                  insertData(nameController.text, emailController.text);
                 AuthController.instance.register(emailController.text.trim(), passwordController.text.trim());
               },
               child: Container(
@@ -207,4 +216,18 @@ class SignUpPage extends StatelessWidget {
         )
     );
   }
+
+  void insertData(String name, String email){
+    DatabaseReference dbRef = FirebaseDatabase.instance.reference().child('users');
+    dbRef.push().set({
+      'name': name,
+      'email': email,
+      // add other fields here
+    }).then((_) {
+      print('Data inserted successfully.');
+    }).catchError((error) {
+      print('Data insertion failed: $error');
+    });
+  }
+
 }

@@ -16,9 +16,7 @@ Future<void> set_profile(file,image,name,age,phone,gender)async{
      image=await uploadImage(file);
     await doc.update({
      'name':name,
-     'age':age,
      'gender':gender,
-     'phone':phone,
       'image':image
    });
 EasyLoading.showToast('successfully!!');

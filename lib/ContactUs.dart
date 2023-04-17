@@ -4,6 +4,10 @@ import 'package:flutter_email_sender/flutter_email_sender.dart';
 import 'package:sample/Components/custom_button.dart';
 import 'package:sample/Components/custom_textfield.dart';
 import 'package:sample/welcome_page.dart';
+import 'package:firebase_database/firebase_database.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 
 import '../constants.dart';
 class ContactUs extends StatefulWidget {
@@ -14,8 +18,12 @@ class ContactUs extends StatefulWidget {
 }
 var wedalpu;
 var podugu;
+final databaseRef = FirebaseDatabase.instance.reference();
 class _ContactUsState extends State<ContactUs> {
   var bodycontroller=TextEditingController();
+  var messagecontroller = TextEditingController();
+  final String email = 'example@example.com';
+
 
   @override
   Widget build(BuildContext context) {
@@ -49,9 +57,18 @@ class _ContactUsState extends State<ContactUs> {
                 SizedBox(height: podugu/60,),
                 custom_textfield(hinttitle: "Add text",controller: bodycontroller,),
                 SizedBox(height: podugu/40,),
-                custom_button(() async {
-                 }, "Send Massage "),
-                Text("Thank you for reaching out!")
+                ElevatedButton(
+                  onPressed: () {
+                    launch('mailto:$email');
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.red, // set background color to red
+                    fixedSize: Size(200, 50), // set fixed size of the button
+                    minimumSize: Size(150, 40), // set minimum size of the button
+                  ),
+                  child: Text('Send Message'),
+                ),
+                Text("Thank you for reaching out!"),
 
               ],
             ),
@@ -60,4 +77,16 @@ class _ContactUsState extends State<ContactUs> {
       ),
     );
   }
+  void insertData(String message){
+    DatabaseReference dbRef = FirebaseDatabase.instance.reference().child('users');
+    dbRef.push().set({
+      'message': message,
+      // add other fields here
+    }).then((_) {
+      print('Data inserted successfully.');
+    }).catchError((error) {
+      print('Data insertion failed: $error');
+    });
+  }
 }
+

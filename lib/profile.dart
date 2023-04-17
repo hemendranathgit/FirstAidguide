@@ -32,6 +32,7 @@ class _profileState extends State<profile> {
   Widget build(BuildContext context) {
     wdth=MediaQuery.of(context).size.width;
     hght=MediaQuery.of(context).size.height;
+    DatabaseReference userRef = FirebaseDatabase.instance.reference().child("users").child("userId").child("name");
     return Scaffold(
       backgroundColor: Colors.transparent,
       appBar: AppBar(

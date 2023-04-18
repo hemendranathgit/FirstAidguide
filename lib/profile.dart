@@ -9,6 +9,7 @@ import 'package:sample/Components/custom_heading_text.dart';
 import 'package:sample/Components/get_profile.dart';
 import 'package:sample/Components/set_profile.dart';
 import 'package:sample/auth_controller.dart';
+import 'package:firebase_database/firebase_database.dart';
 
 import '../Components/custom_textfield.dart';
 import '../Components/Authentication.dart';
@@ -26,7 +27,7 @@ class _profileState extends State<profile> {
   static final ImagePicker _picker = ImagePicker();
 
   var imagefile;
-
+  DatabaseReference userRef = FirebaseDatabase.instance.reference().child("users").child("userId").child("name");
   bool obsecure=true;
   @override
   Widget build(BuildContext context) {
@@ -162,7 +163,7 @@ child: ClipRRect(
                                   custom_button(() async {
                                     try {
                                       if(subject.text.trim().isEmpty)return;
-                                      await set_profile(imagefile, USER_PROFILE['image']??"", subject.text, USER_PROFILE['age']??"", USER_PROFILE['phone']??"", USER_PROFILE['gender']??"");
+                                      await set_profile(imagefile, USER_PROFILE['image']??"");
                                       await get_profile();
                                       if(mounted)
                                         setState(() {
@@ -357,7 +358,9 @@ child: ClipRRect(
                             setState((){});
                             imagefile = File(photo.path);
                           }
-                          await set_profile(imagefile, USER_PROFILE['image']??"", USER_PROFILE['name']??"", USER_PROFILE['age']??"", USER_PROFILE['phone']??"", USER_PROFILE['gender']??"");
+                          // calling set_profile function
+                          await set_profile(imagefile, USER_PROFILE['image']??"");
+
                           await get_profile();
                           if(mounted)
                             setState(() {
@@ -382,8 +385,10 @@ child: ClipRRect(
                           if (photo != null) {
                             imagefile = File(photo.path);
                           }
-                          await set_profile(imagefile, USER_PROFILE['image']??"", USER_PROFILE['name']??"", USER_PROFILE['age']??"", USER_PROFILE['phone']??"", USER_PROFILE['gender']??"");
-await get_profile();
+                          // calling set_profile function
+                          await set_profile(imagefile, USER_PROFILE['image']??"");
+
+                          await get_profile();
 if(mounted)
   setState(() {
 

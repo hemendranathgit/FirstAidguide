@@ -135,7 +135,10 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(height: 15.7,),
                 GestureDetector(
                   onTap: () {
-                    AuthController.instance.login(emailController.text.trim(), passwordController.text.trim());
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ForgotPassword()),
+                    );
                   },
                   child: Text(
                     "Forgot Password?",
